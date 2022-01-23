@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- OpenFL requires a main class, but libraries don't have main classes, so just use this -->
+	<app main="openfl.display.Sprite"/>
+
+	<!-- the name of the .swc library file in bin/flash/bin -->
+	<app file="mylibrary"/>
+
+	<source path="src"/>
+	
+	<haxelib name="openfl"/>
+
+	<!-- include all of the classes in the com.example package -->
+	<haxeflag name="--macro" value="include('com.example')"/>
+
+	<section if="flash">
+		<!--
+			AddFlashPropertyMeta adds @:flash.property to add getters and
+			setters to make them native get and set functions in AS3
+		-->
+		<source path="build_macros/flash"/>
+		<haxeflag name="--macro" value="AddFlashPropertyMeta.find('com.example')"/>
+
+		<!-- custom .hxml templates required to create .swc library -->
+		<template path="templates" if="flash"/>
+	</section>
+</project>
