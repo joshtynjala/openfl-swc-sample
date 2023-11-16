@@ -23,5 +23,10 @@
 
 		<!-- custom .hxml templates required to create .swc library -->
 		<template path="templates"/>
+		<!--
+			don't remove dead code because other libraries that depend on
+			this one, and need to build .swc files too, might need it
+		 -->
+		<haxeflag name="-dce" value="no"/>
 	</section>
 </project>
