@@ -22,6 +22,6 @@
 		<haxeflag name="--macro" value="AddFlashPropertyMeta.find('com.example')"/>
 
 		<!-- custom .hxml templates required to create .swc library -->
-		<template path="templates" if="flash"/>
+		<template path="templates"/>
 	</section>
 </project>
