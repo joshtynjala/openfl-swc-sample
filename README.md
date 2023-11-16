@@ -22,4 +22,4 @@ During startup, such as in the constructor of the main AS3 class, you should add
 haxe.initSwc(null);
 ```
 
-Sample created by [Josh Tynjala](https://twitter.com/joshtynjala), the author of [Feathers UI](https://feathersui.com/).
+Sample created by [Josh Tynjala](https://github.com/sponsors/joshtynjala), the author of [Feathers UI](https://feathersui.com/) and core contributor to [OpenFL](https://openfl.org/).
