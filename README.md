@@ -16,4 +16,10 @@ To use the _.swc_ library in an ActionScript project, add it with the `--library
 mxmlc --library-path+=mylibrary.swc
 ```
 
+During startup, such as in the constructor of the main AS3 class, you should add the following AS3 code because it initializes a few things that are expected by Haxe-compiled _.swc_ libraries:
+
+```as3
+haxe.initSwc(null);
+```
+
 Sample created by [Josh Tynjala](https://twitter.com/joshtynjala), the author of [Feathers UI](https://feathersui.com/).
