@@ -26,7 +26,7 @@ haxe.initSwc(null);
 
 The [OpenFL](https://openfl.org) library contains a number of template files that are used when building a project. You can find them in the [_openfl/assets/templates_](https://github.com/openfl/openfl/tree/develop/assets/templates) and the [_lime/templates_](https://github.com/openfl/lime/tree/develop/templates) directories. Using the `<template>` element in _project.xml_, it's possible to replace one or more of these template files with custom versions, on a per-project basis, and without forking OpenFL.
 
-This sample project contains a directory named [_custom-templates_](https://github.com/joshtynjala/openfl-swc-sample/tree/master/custom-templates). It is configured in [_project.xml_](https://github.com/joshtynjala/openfl-custom-swc-sample/tree/master/project.xml) like this:
+This sample project contains a directory named [_custom-templates_](https://github.com/joshtynjala/openfl-swc-sample/tree/master/custom-templates). It is configured in [_project.xml_](https://github.com/joshtynjala/openfl-swc-sample/tree/master/project.xml) like this:
 
 ```xml
 <template path="custom-templates"/>
